@@ -1,0 +1,8 @@
+{
+  "demo": {
+    "title": "Välkommen till ngx-translate Demo!",
+    "subtitle": "Översättning demo",
+    "text": "Detta är en enkel demonstration av ngx-translate",
+    "greeting": "Tjena {{user}}!"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "demo": {
+    "title": "Översättning demo",
+    "text": "Detta är en enkel demonstration av ngx-translate",
+    "greeting": "Tjena {user}!"
+  },
+
+  "pluralization": {
+		"things": "Där {count, plural, =0{finns} one{finns} other{finns}} {count, plural, =0{} one{en} other{flera}} {count, plural, =0{inga saker} one{sak} other{saker}}",
+		"people": "{gender, select, male{Hans namn är} female{Hennes namn är} other{Deras namn är }} {name}"
+  }
+}
