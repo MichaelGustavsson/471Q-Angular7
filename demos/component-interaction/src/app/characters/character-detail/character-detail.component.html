@@ -1,0 +1,6 @@
+
+<div *ngIf="character">
+  <h4>{{character.name}}</h4>
+  <h6>Starships</h6>
+  <div *ngFor="let starship of character.starships">{{starship.name}}</div>
+</div>
