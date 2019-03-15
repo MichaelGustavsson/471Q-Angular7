@@ -1,0 +1,25 @@
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Homeplanet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="cursor: pointer" *ngFor="let character of characterList"
+    (click)="onSelect(character)">
+      <td>{{character.name}}</td>
+      <td>{{character.homeworld}}</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<app-character-detail [character]="selectedCharacter"></app-character-detail>
+
+<!-- <div *ngIf="selectedCharacter">
+  <h4>{{selectedCharacter.name}}</h4>
+  <h6>Starships</h6>
+  <div *ngFor="let starship of selectedCharacter.starships">{{starship.name}}</div>
+</div> -->
+
