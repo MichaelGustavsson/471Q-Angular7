@@ -1,0 +1,10 @@
+<h4>Character Details</h4>
+
+<div *ngIf="character">
+  <hr>
+  <h4>{{ character.name }}</h4>
+  <h6>Starships</h6>
+  <div *ngFor="let starship of character.starships">{{ starship.name }}</div>
+</div>
+<hr>
+<button class="btn btn-success" (click)="onGoBack()">Go back</button>

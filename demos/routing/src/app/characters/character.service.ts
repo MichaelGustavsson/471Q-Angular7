@@ -14,8 +14,7 @@ export class CharacterService {
   getCharacter(id: number) {
     const character = characters.filter(c => c.id === id);
     console.log(character);
-    return characters.filter(character => character.id === id)[0];
-  }
+    return characters.filter(character => character.id === id)[0];  }
 }
 
 export const characters = [
@@ -218,6 +217,7 @@ export const characters = [
     starships: []
   },
   {
+    id: 11,
     name: 'Boba Fett',
     homeworld: 'Kamino',
     vehicles: [],
@@ -230,7 +230,7 @@ export const characters = [
     ]
   },
   {
-    id: 11,
+    id: 12,
     name: 'Lando Calrissian',
     homeworld: 'Socorro',
     vehicles: [],

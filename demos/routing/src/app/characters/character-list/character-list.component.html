@@ -1,0 +1,17 @@
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Homeplanet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      style="cursor: pointer"
+      *ngFor="let character of characterList"
+      (click)="onCharacterSelected(character)">
+      <td>{{ character.name }}</td>
+      <td>{{ character.homeworld }}</td>
+    </tr>
+  </tbody>
+</table>
