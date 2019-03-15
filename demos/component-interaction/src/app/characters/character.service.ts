@@ -12,8 +12,6 @@ export class CharacterService {
   }
 
   getCharacter(id: number) {
-    const character = characters.filter(c => c.id === id);
-    console.log(character);
     return characters.filter(character => character.id === id)[0];
   }
 }
